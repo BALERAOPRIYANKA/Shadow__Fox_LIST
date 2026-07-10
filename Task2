@@ -1,0 +1,37 @@
+justice_league = ["Superman", "Batman", "Wonder Woman", "Flash", "Aquaman", "Green Lantern"]
+
+
+print("1. Number of members:", len(justice_league))
+print(justice_league)
+
+
+justice_league.extend(["Batgirl", "Nightwing"])
+print("\n2. After adding Batgirl and Nightwing:")
+print(justice_league)
+
+
+justice_league.remove("Wonder Woman")
+justice_league.insert(0, "Wonder Woman")
+print("\n3. Wonder Woman becomes the leader:")
+print(justice_league)
+
+justice_league.remove("Green Lantern")
+justice_league.remove("Flash")
+aquaman_index = justice_league.index("Aquaman")
+justice_league.insert(aquaman_index + 1, "Green Lantern")
+justice_league.insert(aquaman_index + 2, "Flash")
+print("\n4. Green Lantern placed between Aquaman and Flash:")
+print(justice_league)
+
+
+justice_league = ["Cyborg", "Shazam", "Hawkgirl", "Martian Manhunter", "Green Arrow"]
+print("\n5. New Justice League:")
+print(justice_league)
+
+
+justice_league.sort()
+print("\n6. Sorted Justice League:")
+print(justice_league)
+
+
+print("\nNew Leader:", justice_league[0])
